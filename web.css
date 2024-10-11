@@ -1,0 +1,145 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1b2330;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.top-bar a {
+    color: #fff;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #333;
+    font-weight: 600;
+}
+
+.navbar .user-actions a {
+    margin-left: 20px;
+    color: #333;
+}
+
+.navbar .user-actions a i {
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #7a7a5e;
+    padding: 60px 0;
+    color: white;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #cce7ff;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-image {
+    max-width: 45%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+    }
+}
